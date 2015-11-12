@@ -60,9 +60,10 @@ of _Twinkle, Twinkle, Little Star_, played by a piano.
 
 ### What to look at
 
-The github repository for Overtone, at https://github.com/overtone/overtone,
-is a great source of examples for how to make music with its library.
-These two are helpful for figuring out how to make piano sounds.
+The GitHub repository for Overtone, at
+https://github.com/overtone/overtone, is a great source of examples
+for how to make music with this library.  Here are two helpful
+starting points for figuring out how to make it sound like a piano:
 
 * https://github.com/overtone/overtone/blob/master/src/overtone/examples/getting_started/pragpub-article.clj
 * https://github.com/overtone/overtone/blob/master/src/overtone/examples/workshops/resonate2013/ex01_phrasestudy.clj
