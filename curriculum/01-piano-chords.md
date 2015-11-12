@@ -1,4 +1,4 @@
-Twinkle Twinkle Little Star - Making Sounds with Overtone
+_Twinkle, Twinkle, Little Star_ - Making Sounds with Overtone
 =================================================
 
 In the first part of the ClojureBridge curriculum, you've been
@@ -42,8 +42,7 @@ evaluate `play.clj` by hitting <kbd>Cmd</kbd> + <kbd>Shift</kbd> +
 <kbd>Enter</kbd> (or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
 <kbd>Enter</kbd>), which may take while to finish.
 
-When it completes, you should hear some music!  The familiar melody
-of "Twinkle Twinkle Little Star" came out from Meg's computer.
+When it completes, you should hear some music!
 
 > If you didn't hear anything, check the volume.
 > You did turn up the volume, right?
@@ -51,7 +50,7 @@ of "Twinkle Twinkle Little Star" came out from Meg's computer.
 Move the cursor right next to `(twinkle)` and evaluate this line by
 hitting <kbd>Cmd</kbd> + <kbd>Enter</kbd> (or <kbd>Ctrl</kbd> +
 <kbd>Enter</kbd>).  Again, you should hear some music: the first part
-of "Twinkle Twinkle Little Star" played by a piano.
+of _Twinkle, Twinkle, Little Star_, played by a piano.
 
 > To do this in a repl, `cd` to the tones project root directory and
 > run `lein repl`. Once the repl starts up, `(require 'tones.play)`,
@@ -262,7 +261,6 @@ play it:
 (piano-chord :c3 :minor)
 ```
 
-Her feeling was quite happy when she evaluated the function and these lines one by one.
 
 ### [BONUS] change the function to take multiple sets of arguments
 
@@ -383,10 +381,10 @@ Since the function already has the melody up too "what you are, you
 can complete the song by adding the notes for "Up above the world so
 high", repeating it, and then repeating the first part agin..
 
-Reading the score, she figured out that she needed code to play the
-notes `:g3 :g3 :f3 :f3 :e3 :e3 :d3`, and then she could combine
-functions that she had already learned to play the melody. After a bit
-of experimentation and testing, she wrote the `up-above` function`:
+Using the score, you can determine that the notes of this phrase are
+`:g3 :g3 :f3 :f3 :e3 :e3 :d3`.  Now, combine the functions that
+have been used previously to construct the melody and play it. Here's
+a version of an `up-above` function:
 
 ```clojure
 ;; function definition
@@ -398,15 +396,15 @@ of experimentation and testing, she wrote the `up-above` function`:
       (at (+ start (* i step)) (piano (note (nth notes i)))))))
 ```
 
-She gave the `up-above` function a `start` parameter so she could
-delay the start until after the first part of the song.  She chose the
-[`dotimes`](http://clojuredocs.org/clojure.core/dotimes) function to
-execute the `at` function multiple times.  `nth` is the function she
-learned in the Data Structures module in the ClojureBridge main
-curriculum. She also tried some variations of `step` variations to
-find a good interval between notes.
+By giving the `up-above` function a `start` parameter, you can delay
+the start until after the first part of the song.  The
+[`dotimes`](http://clojuredocs.org/clojure.core/dotimes) function is
+used in the version above to execute the `at` function multiple times.
+The `nth` function was discussed in the Data Structures module in the
+ClojureBridge main curriculum. Try varying the value of the `step`
+binding to find a time interval between the notes that you like.
 
-Meg tested the function she just wrote:
+To test this function, give it a time to start playing:
 
 ```clojure
 (up-above (now))
@@ -423,11 +421,11 @@ It sounded good. The last piece was to play all, `twinkle`,
   (twinkle (+ start 20800)))
 ```
 
-When you Meg evaluate this `let` form, you'll hear
-she heard the entirety of Twinkle Twinkle Little Star played
-on a piano. It may seem simple, but like many simple tunes it
-can be embellished (as Mozart did, when he wrote his [variations
-on the melody](https://www.youtube.com/watch?v=bOXdAa-G4bo).
+When you evaluate this `let` form, you'll hear the entirety of
+_Twinkle, Twinkle, Little Star_ played on a piano. It's a simple,
+start but it can be heavily embellished (as Mozart did, when he wrote
+his [variations on the
+melody](https://www.youtube.com/watch?v=bOXdAa-G4bo).
 
 
 4. Finale - epilogue
