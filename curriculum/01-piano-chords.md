@@ -134,7 +134,7 @@ A *chord* is the sound of two or more notes played at the same time, like this:
 
 ![chord](img/chords_c3.png)
 
-Overtone's has a handy chord generator: the `chord` function. It
+Overtone has a handy chord generator: the `chord` function. It
 returns a set of numbers the corresond to all the notes that make up
 the chord.  You can see how to use the function by moving the cursor
 next to the function name (`chord`), right-clicking and selecting "show
@@ -169,10 +169,10 @@ You might expect that, since`(chord :c3 :major)` corresponds to `(48
 55 52)`, Overtone will play a chord if you type `(piano 48) (piano 55)
 (piano 52)` on a single line and evaluate it. In fact the sound will
 just be a single note, as Light Table will think that you're just
-asking it to evaluate the last of these: the `(piano 52)`
+asking it to evaluate the last of these, the `(piano 52)`.
 
 > At the REPL, writing `(piano 48) (piano 55) (piano 52)` in a single
-> line plays all of the notes of the chord at once.
+> line will play all of the notes of the chord at once.
 
 Knowing the number of the chord's notes, they can be combined together
 using a function, as discussed earlier in the ClojureBridge curriculum:
