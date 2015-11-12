@@ -1,21 +1,17 @@
 Twinkle Twinkle Little Star - Making Sounds with Overtone
 =================================================
 
-This is the story of Meg, who recently attended a ClojureBridge
-workshop.  Meg has always been a bit of a music nerd, and she wondered why
-DJs often used laptops on stage. Then she saw a live music coding
-video, and read that they use Clojure to create the music. Intrigued,
-she started to investigate Overtone.
+In the first part of the ClojureBridge curriculum, you've been
+drawing pictures. Now, let's make some music!
 
 [Overtone](http://overtone.github.io) provides a way to generate
-sounds, synthetic instruments, and music using Clojure. While it
-provides many sophisticated features, it's pretty easy to get started,
-and can be interesting to explore.
+sounds, create synthetic instruments, and compose music using
+Clojure. It's pretty easy to get started, and there are lots of
+sophisticated features to explore.
 
-**Linux Users**
-If you are on Linux, you need to have the jack daemon running. Take a
-look at
-[Installing and starting jack](http://github.com/overtone/overtone/wiki/Installing-and-starting-jack),
+**Linux Users** If you are on Linux, you need to have the JACK daemon
+running. Take a look at [Installing and starting
+JACK](http://github.com/overtone/overtone/wiki/Installing-and-starting-jack),
 and install the packages.
 
 
